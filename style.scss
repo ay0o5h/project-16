@@ -1,0 +1,469 @@
+$maincolor :#ff0000;
+$secondcolor : black;
+$thirdcolor:blanchedalmond;
+$fourthcolor:#F0F0F0;
+$mainfont :'Saira Stencil One', cursive , 'Amiri', serif;
+.btn1 {
+        font-family: $mainfont;
+        background-color: $maincolor;
+        color:$thirdcolor;
+        border-radius: 5px;
+        margin: 10px auto;
+        &:hover {
+            background-color: $secondcolor;
+            border:2px solid $maincolor;
+        }
+}
+.btn2 {
+    font-family: $mainfont;
+    color:$thirdcolor;
+    border-radius: 5px;
+    margin: 10px auto;
+    &:hover {
+        background-color: $maincolor;
+        border:2px solid $secondcolor;
+    }
+}
+.h3 {
+    font-family: $mainfont;
+    color:$maincolor;
+}
+.p {
+    font-family: $mainfont;
+    color:$secondcolor;
+}
+*  {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+// start navbar
+.navbarr {
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+    top: 0;
+    .nav {
+        direction: rtl;
+        background-color: $fourthcolor;
+        display: flexbox!important;
+         li {
+             a {
+                 color:$secondcolor;
+                 font-family: $mainfont;
+             }
+         }
+         .active {
+             border-bottom:2px solid $maincolor;
+         }
+    }
+    img {
+        height: 40px;
+        width: 40px;
+    } 
+}
+// end navbarr
+// start slider
+.slider {
+    background-color: $fourthcolor;
+    justify-content: center !important;
+    text-align: center;
+    direction: rtl;
+    box-shadow: 5px 5px 3px 0px gray;
+    z-index: 5;
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+         top: -15px;
+        bottom:  0%;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+        display: none ;
+    }
+    h5 {
+        color:$thirdcolor;
+        font-family: 'Saira Stencil One', cursive , 'Anton', sans-serif;
+    }
+    .btn-light{
+       @extend .btn1;
+    }
+    .btn-dark {
+        @extend .btn2;
+    }
+    p {
+       @extend .p;
+        margin:50px auto;
+    }
+}
+// end slider
+// start about us 
+.about{
+    background-color: $fourthcolor;
+    border-bottom: 1px solid $secondcolor;
+    justify-content: center !important;
+    text-align: center;
+    direction: rtl;
+    padding: 2%;
+    margin-top: 5px;
+    h3 {
+        @extend .h3;
+    }
+    span{
+        color:$secondcolor;
+    }
+    p {
+        @extend .p;
+    }
+    .team-pic {
+        position: relative;
+        bottom:-40px;
+    }
+}
+// end about us
+// start team 
+.teams {
+    background-color: $fourthcolor;
+    border-bottom: 1px solid $secondcolor;
+    justify-content: center !important;
+    text-align: center;
+    direction: rtl;
+    padding: 3%;
+    .row {
+        margin-right: 0;
+    }
+    h3 {
+        @extend .h3;
+        margin-top: 10px;
+    }
+    .team {
+        background-color: white;
+        border:1px solid $secondcolor;
+        border-radius: 5px;
+        margin: 50px auto;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    img {
+        position: relative;
+        top:-30px;
+    }
+    i{
+       font-size: 30px;
+    }
+    .fa-facebook{
+        color:blue;
+    }
+    .fa-instagram{
+        color:rgba(255, 0, 0, 0.986);
+    }
+    .fa-twitter{
+        color:rgba(4, 182, 253,0.692);
+    }
+    p {
+        @extend .p;
+    }
+}
+// end team 
+// start team-skills
+.team-skills {
+    background-color: $fourthcolor;
+    justify-content: center !important;
+    text-align: center;
+    direction: rtl;
+    padding: 2%;
+    box-shadow: 5px 5px 3px 0px gray;
+    z-index: 2;
+    img {
+        position: relative;
+        top:-50px;
+    }
+    h3 {
+        @extend .h3;
+    }
+    p {
+        @extend .p;
+    }
+    h5 {
+        text-transform: capitalize;
+        font-family: cursive;
+    }
+    .progress {
+        background-color: white;
+        border: 1px solid $secondcolor;
+       .progress-bar {
+           background-color: $maincolor;
+       }
+    }
+}
+// end team skills
+// start our serves
+.serves {
+    background-color: $fourthcolor;
+    border-bottom: 1px solid $secondcolor;
+    justify-content: center !important;
+    text-align: center;
+    direction: rtl;
+    padding: 2%;
+    margin-top: 5px;
+    h3 {
+        @extend .h3;
+    }
+    span{
+        color:$secondcolor;
+    }
+    p {
+        @extend .p;
+    }
+}
+// end our serves
+// start what-do
+.what-do {
+    background-color: $fourthcolor;
+    justify-content: center !important;
+    text-align: center;
+    direction: rtl;
+    padding: 3%;
+    box-shadow: 5px 5px 3px 0px gray;
+    z-index: 2;
+    .row {
+        margin-right: 0;
+    }
+    h3 , h5 {
+        @extend .h3;
+    }
+    p {
+        @extend .p;
+    }
+    .do {
+        background-color: white;
+        border-radius: 5px;
+        margin: 50px auto;
+    }
+    
+    img {
+        position: relative;
+        top:-30px;
+    }
+   h4 {
+    font-family: $mainfont;
+    color :$thirdcolor
+   }
+   .liked {
+       padding: 1%;
+   }
+   .btn-light {
+    @extend .btn1;
+   }
+   .btn-dark {
+    @extend .btn2;
+    background-color: white;
+    color: $secondcolor;
+   }
+   .do-pic {
+    position: relative;
+    top:-70px;
+}
+}
+// end what-do
+// start  gallary
+.gallary {
+    background-color: $fourthcolor;
+    justify-content: center !important;
+    text-align: center;
+    direction: rtl;
+    padding: 2%;
+    margin-top: 5px;
+    box-shadow: 5px 5px 3px 0px gray;
+    z-index: 2;
+    .images {
+        background-color: white;
+        border-radius: 5px;
+        margin: 50px auto;
+        position: relative;
+    }
+    .caption {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        cursor: pointer;
+        background-color:  rgba(200,200,200,0.5);
+            &:hover  {
+             opacity: 0.7;
+            }
+            .text {
+                color: white;
+                font-size: 10px;
+                font-family: $mainfont;
+                background-color:#303030;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border:1px solid white;
+                padding:1%;
+                
+       }
+       }
+      
+    
+    img {
+        width: 100%;
+        cursor: pointer;
+    }
+    h3 , h5 {
+        @extend .h3;
+    }
+    span{
+        color:$secondcolor;
+    }
+    p {
+        @extend .p;
+    }
+    .btn-dark {
+        @extend .btn2;
+    }
+    .active1 {
+        background-color: $maincolor;
+    }
+}
+// end gallary 
+// start blog
+.blog {
+    background-color: $fourthcolor;
+    justify-content: center !important;
+    text-align: center !important;
+    direction: rtl;
+    padding: 2%;
+    margin-top: 5px;
+    box-shadow: 5px 5px 3px 0px gray;
+    z-index: 2;
+    .row {
+        margin-right: 0;
+    }
+    .blogs {
+        background-color: white;
+        border-radius: 5px;
+        margin: 50px auto;
+    }
+    img , embed{
+        width: 100%;
+    }
+    h3 ,h4 {
+        @extend .h3;
+    }
+    span{
+        color:$secondcolor;
+    }
+    p {
+        @extend .p;
+    }
+    .btn-dark {
+        @extend .btn2;
+    }
+    h5 {
+        @extend .p;
+        border-bottom : 1px solid $secondcolor;
+        width: 60%;
+    }
+    .more {
+        display:none;
+    }
+    .line {
+        border-left: 2px solid $maincolor;
+    }
+}
+// end blog 
+// start contact us 
+.contact {
+        background-color: $fourthcolor;
+        justify-content: center !important;
+        text-align: center !important;
+        direction: rtl;
+        padding: 2%;
+        margin-top: 5px;
+       
+        h3 ,h5 {
+            @extend .h3;
+        }
+        p {
+            @extend .p;
+        }
+}
+.cont {
+    background-color: #303030;
+    justify-content: center !important;
+    text-align: center !important;
+    direction: rtl;
+    padding: 2%;
+    .row {
+        margin-right: 0;
+    }
+    .way {
+            background-color: white;
+            border-radius: 5px;
+            margin: 50px auto;
+    }
+    p {
+        @extend .p;
+    }
+    h5 {
+        @extend .h3;
+    }
+    i {
+        color:$thirdcolor;
+        background-color: $maincolor;
+        border-radius: 50%;
+        font-size: 40px;
+        padding: 2%;
+        position: relative;
+        top:-20px;
+    }
+    .form-control {
+        margin: 30px auto;
+        @extend .p;
+    }
+    .btn {
+        @extend .btn1;
+    }
+ }
+//  end contact us
+// start social
+.social {
+    background-color: $maincolor;
+    justify-content: center !important;
+    text-align: center !important;
+    direction: rtl;
+    padding: 2%;
+    i {
+        color:$maincolor;
+        background-color: $thirdcolor;
+        border-radius: 50%;
+        font-size: 30px;
+        padding: 1%;
+    }
+}
+// end social
+// start footer
+.footer {
+    background-color: #303030;
+    justify-content: center !important;
+    text-align: center !important;
+    direction: rtl;
+    padding: 2%;
+    p {
+       font-family: $mainfont;
+       color: $thirdcolor;
+    }
+}
+// end footer

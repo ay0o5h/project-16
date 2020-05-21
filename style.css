@@ -1,0 +1,459 @@
+.btn1, .slider .btn-light, .what-do .btn-light, .cont .btn {
+  font-family: "Saira Stencil One", cursive, "Amiri", serif;
+  background-color: #ff0000;
+  color: blanchedalmond;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.btn1:hover, .slider .btn-light:hover, .what-do .btn-light:hover, .cont .btn:hover {
+  background-color: black;
+  border: 2px solid #ff0000;
+}
+
+.btn2, .slider .btn-dark, .what-do .btn-dark, .gallary .btn-dark, .blog .btn-dark {
+  font-family: "Saira Stencil One", cursive, "Amiri", serif;
+  color: blanchedalmond;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.btn2:hover, .slider .btn-dark:hover, .what-do .btn-dark:hover, .gallary .btn-dark:hover, .blog .btn-dark:hover {
+  background-color: #ff0000;
+  border: 2px solid black;
+}
+
+.h3, .about h3, .teams h3, .team-skills h3, .serves h3, .what-do h3, .what-do h5, .gallary h3, .gallary h5, .blog h3, .blog h4, .contact h3, .contact h5, .cont h5 {
+  font-family: "Saira Stencil One", cursive, "Amiri", serif;
+  color: #ff0000;
+}
+
+.p, .slider p, .about p, .teams p, .team-skills p, .serves p, .what-do p, .gallary p, .blog p, .blog h5, .contact p, .cont p, .cont .form-control {
+  font-family: "Saira Stencil One", cursive, "Amiri", serif;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbarr {
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+}
+
+.navbarr .nav {
+  direction: rtl;
+  background-color: #F0F0F0;
+  display: flexbox !important;
+}
+
+.navbarr .nav li a {
+  color: black;
+  font-family: "Saira Stencil One", cursive, "Amiri", serif;
+}
+
+.navbarr .nav .active {
+  border-bottom: 2px solid #ff0000;
+}
+
+.navbarr img {
+  height: 40px;
+  width: 40px;
+}
+
+.slider {
+  background-color: #F0F0F0;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center;
+  direction: rtl;
+  -webkit-box-shadow: 5px 5px 3px 0px gray;
+          box-shadow: 5px 5px 3px 0px gray;
+  z-index: 5;
+}
+
+.slider .carousel-caption {
+  position: absolute;
+  right: 15%;
+  top: -15px;
+  bottom: 0%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+
+.slider h5 {
+  color: blanchedalmond;
+  font-family: 'Saira Stencil One', cursive , 'Anton', sans-serif;
+}
+
+.slider p {
+  margin: 50px auto;
+}
+
+.about {
+  background-color: #F0F0F0;
+  border-bottom: 1px solid black;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center;
+  direction: rtl;
+  padding: 2%;
+  margin-top: 5px;
+}
+
+.about span {
+  color: black;
+}
+
+.about .team-pic {
+  position: relative;
+  bottom: -40px;
+}
+
+.teams {
+  background-color: #F0F0F0;
+  border-bottom: 1px solid black;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center;
+  direction: rtl;
+  padding: 3%;
+}
+
+.teams .row {
+  margin-right: 0;
+}
+
+.teams h3 {
+  margin-top: 10px;
+}
+
+.teams .team {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 50px auto;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.teams img {
+  position: relative;
+  top: -30px;
+}
+
+.teams i {
+  font-size: 30px;
+}
+
+.teams .fa-facebook {
+  color: blue;
+}
+
+.teams .fa-instagram {
+  color: rgba(255, 0, 0, 0.986);
+}
+
+.teams .fa-twitter {
+  color: rgba(4, 182, 253, 0.692);
+}
+
+.team-skills {
+  background-color: #F0F0F0;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center;
+  direction: rtl;
+  padding: 2%;
+  -webkit-box-shadow: 5px 5px 3px 0px gray;
+          box-shadow: 5px 5px 3px 0px gray;
+  z-index: 2;
+}
+
+.team-skills img {
+  position: relative;
+  top: -50px;
+}
+
+.team-skills h5 {
+  text-transform: capitalize;
+  font-family: cursive;
+}
+
+.team-skills .progress {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.team-skills .progress .progress-bar {
+  background-color: #ff0000;
+}
+
+.serves {
+  background-color: #F0F0F0;
+  border-bottom: 1px solid black;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center;
+  direction: rtl;
+  padding: 2%;
+  margin-top: 5px;
+}
+
+.serves span {
+  color: black;
+}
+
+.what-do {
+  background-color: #F0F0F0;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center;
+  direction: rtl;
+  padding: 3%;
+  -webkit-box-shadow: 5px 5px 3px 0px gray;
+          box-shadow: 5px 5px 3px 0px gray;
+  z-index: 2;
+}
+
+.what-do .row {
+  margin-right: 0;
+}
+
+.what-do .do {
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px auto;
+}
+
+.what-do img {
+  position: relative;
+  top: -30px;
+}
+
+.what-do h4 {
+  font-family: "Saira Stencil One", cursive, "Amiri", serif;
+  color: blanchedalmond;
+}
+
+.what-do .liked {
+  padding: 1%;
+}
+
+.what-do .btn-dark {
+  background-color: white;
+  color: black;
+}
+
+.what-do .do-pic {
+  position: relative;
+  top: -70px;
+}
+
+.gallary {
+  background-color: #F0F0F0;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center;
+  direction: rtl;
+  padding: 2%;
+  margin-top: 5px;
+  -webkit-box-shadow: 5px 5px 3px 0px gray;
+          box-shadow: 5px 5px 3px 0px gray;
+  z-index: 2;
+}
+
+.gallary .images {
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.gallary .caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.gallary .caption:hover {
+  opacity: 0.7;
+}
+
+.gallary .caption .text {
+  color: white;
+  font-size: 10px;
+  font-family: "Saira Stencil One", cursive, "Amiri", serif;
+  background-color: #303030;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid white;
+  padding: 1%;
+}
+
+.gallary img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.gallary span {
+  color: black;
+}
+
+.gallary .active1 {
+  background-color: #ff0000;
+}
+
+.blog {
+  background-color: #F0F0F0;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center !important;
+  direction: rtl;
+  padding: 2%;
+  margin-top: 5px;
+  -webkit-box-shadow: 5px 5px 3px 0px gray;
+          box-shadow: 5px 5px 3px 0px gray;
+  z-index: 2;
+}
+
+.blog .row {
+  margin-right: 0;
+}
+
+.blog .blogs {
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px auto;
+}
+
+.blog img, .blog embed {
+  width: 100%;
+}
+
+.blog span {
+  color: black;
+}
+
+.blog h5 {
+  border-bottom: 1px solid black;
+  width: 60%;
+}
+
+.blog .more {
+  display: none;
+}
+
+.blog .line {
+  border-left: 2px solid #ff0000;
+}
+
+.contact {
+  background-color: #F0F0F0;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center !important;
+  direction: rtl;
+  padding: 2%;
+  margin-top: 5px;
+}
+
+.cont {
+  background-color: #303030;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center !important;
+  direction: rtl;
+  padding: 2%;
+}
+
+.cont .row {
+  margin-right: 0;
+}
+
+.cont .way {
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px auto;
+}
+
+.cont i {
+  color: blanchedalmond;
+  background-color: #ff0000;
+  border-radius: 50%;
+  font-size: 40px;
+  padding: 2%;
+  position: relative;
+  top: -20px;
+}
+
+.cont .form-control {
+  margin: 30px auto;
+}
+
+.social {
+  background-color: #ff0000;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center !important;
+  direction: rtl;
+  padding: 2%;
+}
+
+.social i {
+  color: #ff0000;
+  background-color: blanchedalmond;
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 1%;
+}
+
+.footer {
+  background-color: #303030;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center !important;
+  direction: rtl;
+  padding: 2%;
+}
+
+.footer p {
+  font-family: "Saira Stencil One", cursive, "Amiri", serif;
+  color: blanchedalmond;
+}
+/*# sourceMappingURL=style.css.map */
